@@ -11,14 +11,36 @@ const Faq = () => {
           FAQs
         </h1>
         <Accordion variant="light">
-          <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1">
-            {defaultContent}
+          <AccordionItem
+            key="1"
+            aria-label="Accordion 1"
+            title="Who are the developers ?"
+          >
+            We are a team of experienced developers with an average of 3 years
+            of experience developing mobile and web applications. As we are a
+            small team, you&Apos;ll work directly with a dedicated rep. Also,
+            all design requests such as animations or illustrations are managed
+            by our in house designers.
           </AccordionItem>
-          <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
-            {defaultContent}
+          <AccordionItem
+            key="2"
+            aria-label="Accordion 2"
+            title="What Technology stack do you develop with?"
+          >
+            Our Primary focus is developing for the web and mobile, as such, we
+            work With NextJs, Flutter and Javascript on The front end. We also
+            develop Web3 Applicatiions using Alchemy SDK to connect and deploy
+            to any EVM blockchain.
           </AccordionItem>
-          <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
-            {defaultContent}
+          <AccordionItem
+            key="3"
+            aria-label="Accordion 3"
+            title="What if I don't like the design?"
+          >
+            We Provide up to two free revisions on design Projects, However, We
+            Do not offer revisions for Mobile and Web Development projects, as
+            all design revisions will be completed before the start of the
+            development.
           </AccordionItem>
           <AccordionItem key="4" aria-label="Accordion 4" title="Accordion 4">
             {defaultContent}

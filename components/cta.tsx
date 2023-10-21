@@ -4,15 +4,15 @@ import { Input } from "@nextui-org/react";
 
 const Cta = () => {
   return (
-    <section className="lg:pt-40 lg:pb-40 pt-20 pb-20 relative w-full">
+    <section className="lg:pt-30 lg:pb-30 pt-20 pb-20 relative w-full dark:bg-gray-800 bg-black text-white">
       <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl">
         <div className="max-w-3xl mx-auto text-center lg:p-10">
           <div>
-            <p className="text-5xl tracking-tight text-black ">
+            <p className="text-5xl tracking-tight dark:text-black">
               Subscribe and get{" "}
               <span className="lg:block">benefits from our newsletter</span>
             </p>
-            <p className="mt-4 text-lg tracking-tight text-gray-600">
+            <p className="mt-4 text-lg tracking-tight dark:text-gray-600">
               If you could kick the person in the pants responsible for most of
               your trouble, you wouldnt sit for a month. Imagine that, fam.
             </p>
