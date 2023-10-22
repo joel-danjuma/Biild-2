@@ -16,7 +16,7 @@ import { TwitterIcon } from "@/components/icons";
 export const Navbar = () => {
   return (
     <section className="w-full h-full flex justify-center relative">
-      <NextUINavbar className=" max-w-xl h-30 rounded-full lg:bg-black lg:text-white lg:fixed sticky top-5 left-0 right-0 ml-auto mr-auto ">
+      <NextUINavbar className=" max-w-xl h-30 rounded-full lg:bg-black bg-none lg:text-white lg:fixed sticky top-5 left-0 right-0 ml-auto mr-auto ">
         {/* DESKTOP NAV */}
         <NavbarContent justify="start">
           <NavbarBrand as="li" className="gap-3 max-w-fit">

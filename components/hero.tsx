@@ -12,11 +12,11 @@ import { title, subtitle } from "@/components/primitives";
 export default function Hero() {
   // bg-[url('../public/hole.svg')] dark:bg-[url('../public/hole-2.svg')] bg-no-repeat bg-cover bg-center
   return (
-    <section className="min-w-screen min-h-screen flex flex-col items-center justify-center gap-12 relative  z-0 bg-[url('../public/hole.svg')] dark:bg-[url('../public/hole-2.svg')] bg-no-repeat bg-cover bg-center">
-      <div className="dark:bg-black light:bg-white/20 light:shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur dark:backdrop-blur-0 dark:bg-opacity-70 absolute top-0 w-full h-full z-10"></div>
-      {/* <HeroBg color="white" className="w-full min-h-screen z-0 " /> */}
+    <section className="min-w-screen min-h-screen flex flex-col items-center justify-center gap-12 relative  z-0 ">
+      <div className="dark:bg-black bg-white bg-opacity-70 dark:bg-opacity-70 absolute top-0 w-full h-full z-10"></div>
+      <HeroBg className="lg:block hidden z-0" />
 
-      <div className="inline-block max-w-4xl text-center justify-center space-y-12 z-20 absolute lg:top-20 top-0 lg:pt-30 pt-20 ">
+      <div className="inline-block max-w-4xl text-center justify-center space-y-12 z-20 absolute lg:top-20 top-10 lg:pt-30 pt-20 ">
         <h1 className={title({ size: "xl" })}>Innovative &nbsp;</h1>
         <h1 className={title({ color: "violet", size: "xl" })}>Web&nbsp;</h1>
         <br />

@@ -10,7 +10,7 @@ import Testimonials from "@/components/testimonials";
 
 const Home = () => {
   return (
-    <section>
+    <section className="scroll-smooth">
       <Hero />
       <MarqueeComponent />
       <Benefits />

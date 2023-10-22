@@ -215,16 +215,203 @@ export const NextUILogo: React.FC<IconSvgProps> = (props) => {
   );
 };
 
-export const HeroBg: React.FC<IconSvgProps> = (props) => {
-  const { color } = props;
+export const Clock: React.FC<IconSvgProps> = () => {
   const icon = {
     hidden: {
       pathLength: 0,
-      fill: color,
+      //   fill: "rgba(255, 255, 255, 0)",
     },
     visible: {
       pathLength: 1,
-      fill: color,
+      //   fill: "rgba(255, 255, 255, 1)",
+    },
+  };
+  return (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <motion.path
+        variants={icon}
+        initial="hidden"
+        animate="visible"
+        transition={{
+          duration: 1,
+          ease: "easeInOut",
+          repeat: Infinity,
+          repeatType: "loop",
+          repeatDelay: 2,
+        }}
+        d="M5.04798 8.60657L2.53784 8.45376C4.33712 3.70477 9.503 0.999914 14.5396 2.34474C19.904 3.77711 23.0904 9.26107 21.6565 14.5935C20.2227 19.926 14.7116 23.0876 9.3472 21.6553C5.36419 20.5917 2.58192 17.2946 2 13.4844"
+        stroke="#141B34"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M12 8V12L14 14"
+        stroke="#141B34"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const Checkmark: React.FC<IconSvgProps> = (props) => {
+  const icon = {
+    hidden: {
+      pathLength: 0,
+      //   fill: "currentColor",
+    },
+    visible: {
+      pathLength: 1,
+      //   fill: "currentColor",
+    },
+  };
+  return (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15 2.5H12C7.52166 2.5 5.28249 2.5 3.89124 3.89124C2.5 5.28249 2.5 7.52166 2.5 12C2.5 16.4783 2.5 18.7175 3.89124 20.1088C5.28249 21.5 7.52166 21.5 12 21.5C16.4783 21.5 18.7175 21.5 20.1088 20.1088C21.5 18.7175 21.5 16.4783 21.5 12V10"
+        stroke="#141B34"
+        stroke-width="1.5"
+        stroke-linecap="round"
+      />
+      <motion.path
+        variants={icon}
+        initial="hidden"
+        animate="visible"
+        transition={{
+          duration: 1,
+          ease: "easeInOut",
+          repeat: Infinity,
+          repeatType: "loop",
+          repeatDelay: 2,
+        }}
+        d="M8.5 10L12 13.5L21.0002 3.5"
+        stroke="#141B34"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const Diamond: React.FC<IconSvgProps> = (props) => {
+  return (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 22 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <motion.path
+        initial={{ pathLength: 0 }}
+        animate={{ pathLength: 1 }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut",
+          repeat: Infinity,
+          repeatType: "loop",
+          repeatDelay: 2,
+        }}
+        d="M4.78223 2.18192C5.43007 1.68319 5.754 1.43383 6.12788 1.27323C6.29741 1.20041 6.47367 1.14158 6.65459 1.09741C7.0536 1 7.4767 1 8.32289 1H13.6771C14.5233 1 14.9464 1 15.3454 1.09741C15.5263 1.14158 15.7026 1.20041 15.8721 1.27323C16.246 1.43383 16.5699 1.68319 17.2178 2.18192C19.3644 3.83448 20.4378 4.66077 20.8057 5.73078C20.9694 6.20673 21.0305 6.70728 20.9858 7.20461C20.8852 8.32268 20.0379 9.34595 18.3433 11.3925L14.3498 16.2153C12.8126 18.0718 12.044 19 11 19C9.95604 19 9.18742 18.0718 7.65018 16.2153L3.65671 11.3925C1.96208 9.34595 1.11476 8.32268 1.0142 7.20461C0.969472 6.70728 1.03064 6.20673 1.1943 5.73078C1.56224 4.66077 2.63557 3.83448 4.78223 2.18192Z"
+        stroke="#141B34"
+        stroke-width="1.5"
+      />
+      <path
+        d="M9 6.5H13"
+        stroke="#141B34"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+export const Radial: React.FC<IconSvgProps> = (props) => {
+  return (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 22 22"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <motion.path
+        initial={{ pathLength: 0 }}
+        animate={{ pathLength: 1 }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut",
+          repeat: Infinity,
+          repeatType: "loop",
+          repeatDelay: 2,
+        }}
+        d="M11 1C16.5228 1 21 5.47715 21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 9.19146 1.4801 7.49505 2.31981 6.03127"
+        stroke="#141B34"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <motion.path
+        initial={{ pathLength: 1 }}
+        animate={{ pathLength: 0 }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut",
+          repeat: Infinity,
+          repeatType: "loop",
+          repeatDelay: 2,
+        }}
+        d="M4 11C4 14.866 7.13401 18 11 18C14.866 18 18 14.866 18 11C18 7.13401 14.866 4 11 4"
+        stroke="#141B34"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <motion.path
+        initial={{ pathLength: 0 }}
+        animate={{ pathLength: 1 }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut",
+          repeat: Infinity,
+          repeatType: "loop",
+          repeatDelay: 2,
+        }}
+        d="M11 15C13.2091 15 15 13.2091 15 11C15 8.79086 13.2091 7 11 7"
+        stroke="#141B34"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const HeroBg: React.FC<IconSvgProps> = (props) => {
+  const { size } = props;
+  const icon = {
+    hidden: {
+      pathLength: 0,
+      fill: "currentColor",
+    },
+    visible: {
+      pathLength: 1,
+      fill: "currentColor",
     },
   };
 
@@ -242,13 +429,15 @@ export const HeroBg: React.FC<IconSvgProps> = (props) => {
       // xml:space="preserve"
     >
       <motion.path
-        // initial={{ pathLength: 0 }}
-        // animate={{ pathLength: 1 }}
         variants={icon}
         initial="hidden"
         animate="visible"
         transition={{
           duration: 2,
+          ease: "easeInOut",
+          repeat: Infinity,
+          repeatType: "loop",
+          repeatDelay: 2,
         }}
         d="M2575.332,0c18.967,0.004,46.479,1.457,89.316,1.933c-31.121,32.574-19.61,20.526-50.725,53.089
 	c-117.746,11.86-111.646,11.389-129.66,13.835C2534.209,9.443,2526.862-0.01,2575.332,0H0v2700h4800V247.898

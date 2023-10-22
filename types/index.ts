@@ -5,6 +5,12 @@ export type IconSvgProps = SVGProps<SVGSVGElement> & {
   color?: string;
 };
 
+export type FeaturesProps = {
+  title: string;
+  description: string;
+  children: React.ReactNode;
+};
+
 //  interface MySVGProps extends React.SVGProps<SVGSVGElement> {
 //   "xmlns:serif"?: string;
 // }
