@@ -22,18 +22,23 @@ export const siteConfig = {
       href: "#services",
     },
     {
+      label: "Pricing",
+      href: "#pricing",
+    },
+    {
       label: "FAQs",
       href: "#faq",
     },
   ],
   navMenuItems: [
     {
-      label: "Work",
-      href: "#work",
+      label: "Benefits",
+      href: "#benefits",
     },
+
     {
-      label: "Team",
-      href: "#team",
+      label: "Services",
+      href: "#services",
     },
     {
       label: "Pricing",
@@ -41,7 +46,7 @@ export const siteConfig = {
     },
     {
       label: "FAQs",
-      href: "#faqs",
+      href: "#faq",
     },
   ],
   links: {

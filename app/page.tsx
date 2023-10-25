@@ -3,6 +3,7 @@ import Cta from "@/components/cta";
 import Faq from "@/components/faq";
 import Hero from "@/components/hero";
 import Footer from "@/components/footer";
+import Pricing from "@/components/pricing";
 import Benefits from "@/components/benefits";
 import Services from "@/components/services";
 import MarqueeComponent from "@/components/marquee";
@@ -16,6 +17,7 @@ const Home = () => {
       <Benefits />
       <Testimonials />
       <Services />
+      <Pricing />
       <Faq />
       <Cta />
       <Footer />
