@@ -14,7 +14,10 @@ export default function Hero() {
   return (
     <section className="min-w-screen min-h-screen flex flex-col items-center justify-center gap-12 relative  z-0 ">
       <div className="dark:bg-black bg-white bg-opacity-70 dark:bg-opacity-70 absolute top-0 w-full h-full z-10"></div>
-      <HeroBg className="lg:block hidden z-0" />
+      <div className="w-full h-full lg:flex hidden justify-center ">
+        {" "}
+        <HeroBg />
+      </div>
 
       <div className="inline-block max-w-4xl text-center justify-center space-y-12 z-20 absolute lg:top-20 top-10 lg:pt-30 pt-20 ">
         <h1 className={title({ size: "xl" })}>Innovative &nbsp;</h1>

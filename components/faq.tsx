@@ -17,20 +17,35 @@ const faqs = [
     description:
       "We Provide up to two free revisions on design Projects, However, We Do not offer revisions for Mobile and Web Development projects, as all design revisions will be completed before the start of the development.",
   },
+  {
+    title: "How fast will I receive my designs?",
+    description:
+      "On average, most development requests are completed in 2 weeks or less. However, more complex requests can take longer.",
+  },
+  {
+    title: "What programs do you design in?",
+    description:
+      "Our Developers are conversant with various technologies, and can develop most kinds of applications. The technologies we focus on include Javascript, Python, NodeJs, NextJs, Ethereum, Alchemy, HardHat and FastAPI. ",
+  },
+  {
+    title: "Are there any refunds if I don't like the service?",
+    description:
+      "Due to the high quality nature of the work, there will be no refunds issued.",
+  },
+  {
+    title: "Are there any refunds if I don't like the service?",
+    description:
+      "Due to the high quality nature of the work, there will be no refunds issued.",
+  },
 ];
 
 const Faq = () => {
   const defaultContent =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
   return (
-    <section
-      id="faq"
-      className="w-full h-screen dark:black bg-gray-300 pb-20 p-4 "
-    >
+    <section id="faq" className="w-full h-full dark:bg-black pt-20 pb-20 p-4 ">
       <div className="w-full h-full container mx-auto flex flex-col items-center">
-        <h1 className="lg:text-6xl text-4xl lg:pt-20 lg:pb-20 pt-10 pb-10">
-          FAQs
-        </h1>
+        <h1 className="lg:text-6xl text-4xl">FAQs</h1>
         <Accordion variant="light">
           <AccordionItem key="1" aria-label="Accordion 1" title={faqs[0].title}>
             {faqs[0].description}
@@ -42,17 +57,17 @@ const Faq = () => {
           <AccordionItem key="3" aria-label="Accordion 3" title={faqs[2].title}>
             {faqs[2].description}
           </AccordionItem>
-          <AccordionItem key="4" aria-label="Accordion 4" title="Accordion 4">
-            {defaultContent}
+          <AccordionItem key="4" aria-label="Accordion 4" title={faqs[3].title}>
+            {faqs[3].description}
           </AccordionItem>
-          <AccordionItem key="5" aria-label="Accordion 5" title="Accordion 5">
-            {defaultContent}
+          <AccordionItem key="5" aria-label="Accordion 5" title={faqs[4].title}>
+            {faqs[4].description}
           </AccordionItem>
-          <AccordionItem key="6" aria-label="Accordion 6" title="Accordion 6">
-            {defaultContent}
+          <AccordionItem key="6" aria-label="Accordion 6" title={faqs[5].title}>
+            {faqs[5].description}
           </AccordionItem>
-          <AccordionItem key="7" aria-label="Accordion 7" title="Accordion 7">
-            {defaultContent}
+          <AccordionItem key="7" aria-label="Accordion 7" title={faqs[6].title}>
+            {faqs[6].description}
           </AccordionItem>
         </Accordion>
       </div>

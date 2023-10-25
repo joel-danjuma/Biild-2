@@ -4,8 +4,8 @@ import { Input } from "@nextui-org/react";
 
 const Cta = () => {
   return (
-    <section className="lg:pt-30 lg:pb-30 pt-20 pb-20 relative w-full dark:bg-gray-800 bg-black text-white">
-      <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl">
+    <section className="pt-20 pb-20 relative w-full dark:bg-gray-800 bg-black text-white">
+      <div className="relative items-center w-full px-5 py-7 mx-auto md:px-12 lg:px-16 max-w-7xl">
         <div className="max-w-3xl mx-auto text-center lg:p-10">
           <div>
             <p className="text-5xl tracking-tight dark:text-black">
