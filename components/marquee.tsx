@@ -84,7 +84,7 @@ const stackLogos = [
 
 const MarqueeComponent = () => {
   return (
-    <section className="flex items-center gap-10 w-screen h-28 pt-4 pb-4 bg-black ">
+    <section className="flex items-center gap-10 w-screen h-28 pt-4 pb-4 bg-black fixed ">
       <div className="w-[100vw] flex items-center overflow-x-hidden">
         {/* <motion.div
           // key={i}
