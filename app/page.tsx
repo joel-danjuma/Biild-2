@@ -6,9 +6,9 @@ import Footer from "@/components/footer";
 import Pricing from "@/components/pricing";
 import Benefits from "@/components/benefits";
 import Services from "@/components/services";
-import { Doodle } from "@/components/icons";
 import Divider from "@/components/divider-section";
 import MarqueeComponent from "@/components/marquee";
+import { Doodle, HeroDoodle } from "@/components/icons";
 
 const Home = () => {
   return (
@@ -18,9 +18,9 @@ const Home = () => {
       <Benefits />
       <Divider
         props={[
-          { image: Doodle, size: 100 },
-          { image: Doodle, size: 100 },
-          { image: Doodle, size: 100 },
+          { image: HeroDoodle, size: 100 },
+          // { image: Doodle, size: 100 },
+          // { image: Doodle, size: 100 },
         ]}
       />
       <Services />

@@ -38,7 +38,7 @@ export default function RootLayout({
           fira.className
         )}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="relative flex flex-col h-screen">
             <Navbar />
             <main className=" max-w-screen">{children}</main>

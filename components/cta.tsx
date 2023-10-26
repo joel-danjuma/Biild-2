@@ -31,7 +31,7 @@ const Cta = () => {
               size="lg"
               className="p-4"
             >
-              <h1 className="p-4 text-5xl">Get Started</h1>
+              <h1 className="p-4 text-3xl">Get Started</h1>
             </Button>
           </div>
           <div className="mx-auto sm:max-w-lg sm:flex absolute bottom-0 left-0 right-0 ml-auto mr-auto">

@@ -11,14 +11,9 @@ export type FeaturesProps = {
   children: React.ReactNode;
 };
 
-//  interface MySVGProps extends React.SVGProps<SVGSVGElement> {
-//   "xmlns:serif"?: string;
-// }
-
-// export const svgProps: MySVGProps = {
-//   version: "1.1",
-//   id: "Layer_1",
-//   "xmlns:serif": "http://www.serif.com/",
-
-//   // other props...
-// };
+export type DividerProps = {
+  props: {
+    image: React.FC<IconSvgProps>;
+    size: number;
+  }[];
+};

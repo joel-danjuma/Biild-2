@@ -84,21 +84,8 @@ const stackLogos = [
 
 const MarqueeComponent = () => {
   return (
-    <section className="flex items-center gap-10 w-screen h-28 pt-4 pb-4 bg-black relative ">
-      <div className="w-[100vw] flex items-center overflow-x-hidden absolute top-0">
-        {/* <motion.div
-          // key={i}
-          animate={{
-            x: [0, -1500],
-          }}
-          transition={{
-            ease: "linear",
-            duration: 5,
-            repeat: Infinity,
-            repeatType: "loop",
-          }}
-          className="w-full absolute flex "
-        > */}
+    <section className="flex items-center gap-10 w-screen h-28 pt-4 pb-4 bg-black relative justify-center ">
+      <div className="w-[100vw] flex items-center overflow-x-hidden absolute">
         <Marquee>
           {stackLogos.map((item, i: any) => (
             <Image
@@ -111,7 +98,6 @@ const MarqueeComponent = () => {
             ></Image>
           ))}
         </Marquee>
-        {/* </motion.div> */}
       </div>
     </section>
   );
