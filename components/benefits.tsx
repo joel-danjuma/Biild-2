@@ -3,6 +3,7 @@ import { Radial } from "./icons";
 import { Diamond } from "./icons";
 import { Checkmark } from "./icons";
 import Features from "@/components/features";
+import Testimonials from "@/components/testimonials";
 import SectionTitle from "@/components/section-title";
 
 type FeatureType = {
@@ -30,7 +31,7 @@ const features: FeatureType[] = [
 
 const Benefits = () => {
   return (
-    <section id="benefits" className="w-full h-full p-4 pb-20">
+    <section id="benefits" className="w-full h-full p-4 bg-[#fbe8de] )">
       <SectionTitle title="We don't try to reinvent the wheel We Just develop Imaginatively">
         Design as you know it is out the door. Design as you want it just
         arrived.
@@ -55,6 +56,7 @@ const Benefits = () => {
           <Checkmark />
         </Features>
       </div>
+      <Testimonials />
     </section>
   );
 };

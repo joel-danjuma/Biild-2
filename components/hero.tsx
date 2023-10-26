@@ -12,7 +12,7 @@ import { title, subtitle } from "@/components/primitives";
 export default function Hero() {
   // bg-[url('../public/hole.svg')] dark:bg-[url('../public/hole-2.svg')] bg-no-repeat bg-cover bg-center
   return (
-    <section className="min-w-screen min-h-screen flex flex-col items-center justify-center gap-12 relative  z-0 ">
+    <section className="min-w-screen min-h-screen flex flex-col items-center justify-center gap-12 relative z-0 ">
       <div className="dark:bg-black bg-white bg-opacity-70 dark:bg-opacity-70 absolute top-0 w-full h-full z-10"></div>
       <div className="w-full h-full lg:flex hidden justify-center ">
         {" "}
