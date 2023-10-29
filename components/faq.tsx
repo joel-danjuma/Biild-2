@@ -5,7 +5,7 @@ const faqs = [
   {
     title: "Who are the developers ?",
     description:
-      "We are a team of experienced developers with an average of 3 years of experience developing mobile and web applications. As we are a small team, you will work directly with a dedicated rep. Also, all design requests such as animations or illustrations are managed by our in house designers.",
+      "We are a team of experienced developers with over 2 years of experience developing mobile and web applications. We are a small team and as such, you will work directly with a dedicated rep. Also, all design requests such as animations or illustrations are managed by our in house designers.",
   },
   {
     title: "What kind of applications can you develop?",

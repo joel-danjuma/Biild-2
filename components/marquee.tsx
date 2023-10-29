@@ -11,7 +11,6 @@ import flutter from "@/public/flutter.svg";
 import ethereum from "@/public/ethereum.svg";
 import chainlink from "@/public/chainlink.svg";
 import javascript from "@/public/javascript.svg";
-// import { motion } from "framer-motion";
 
 const stackLogos = [
   {
@@ -22,6 +21,11 @@ const stackLogos = [
   {
     name: "Python Logo",
     image: python,
+    size: 100,
+  },
+  {
+    name: "Next Logo",
+    image: next,
     size: 100,
   },
   {
@@ -72,12 +76,6 @@ const stackLogos = [
   {
     name: "Ethereum Logo",
     image: ethereum,
-    size: 100,
-  },
-
-  {
-    name: "Next Logo",
-    image: next,
     size: 100,
   },
 ];

@@ -36,7 +36,7 @@ const Benefits = () => {
         Design as you know it is out the door. Design as you want it just
         arrived.
       </SectionTitle>
-      <div className="grid lg:grid-flow-row lg:grid-cols-3 lg:grid-rows-1 grid-flow-col grid-cols-1 grid-rows-3">
+      <div className="grid lg:grid-flow-row lg:grid-cols-3 lg:grid-rows-1 grid-flow-col grid-cols-1 grid-rows-3 justify-center">
         <Features
           title={features[0].title}
           description={features[0].description}

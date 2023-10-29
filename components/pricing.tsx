@@ -1,5 +1,26 @@
 import { Tick } from "./icons";
 
+const tiers = [
+  {
+    price: "$250",
+    title: "Web / Mobile App development",
+    subtitle: "SAAS, Ecommerce, Company Website, Personal Brand, Landing Page",
+    benefits: ["Web Deployemnt included"],
+  },
+  {
+    price: "$60",
+    title: "Design",
+    subtitle: "UI/UX, web design, Logos, Personal Brand, Landing Page",
+    benefits: ["Web Deployemnt included"],
+  },
+  {
+    price: "$0",
+    title: "Web / Mobile App development",
+    subtitle: "SAAS, Ecommerce, Company Website, Personal Brand, Landing Page",
+    benefits: ["Web Deployemnt included"],
+  },
+];
+
 const Pricing = () => {
   return (
     <section id="pricing" className="bg-gray-200 pt-20 pb-20">
@@ -60,7 +81,7 @@ const Pricing = () => {
               </ul>
             </div>
           </div>
-          <div className="relative flex flex-col p-4">
+          {/* <div className="relative flex flex-col p-4">
             <div className="flex-1">
               <p className="flex items-baseline mt-4 text-black">
                 <span className="text-5xl font-light tracking-tight text-black">
@@ -118,8 +139,8 @@ const Pricing = () => {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="relative flex flex-col p-4">
+          </div> */}
+          {/* <div className="relative flex flex-col p-4">
             <div className="flex-1">
               <p className="flex items-baseline mt-4 text-black">
                 <span className="text-5xl font-light tracking-tight text-black">
@@ -169,7 +190,7 @@ const Pricing = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
