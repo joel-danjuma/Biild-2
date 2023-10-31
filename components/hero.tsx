@@ -4,6 +4,7 @@ import { HeroBg } from "./icons";
 import NextLink from "next/link";
 import { Link } from "@nextui-org/link";
 import { siteConfig } from "@/config/site";
+import { FallInPlace } from "./motion/fallInPlace";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { title, subtitle } from "@/components/primitives";
 
@@ -18,20 +19,22 @@ export default function Hero() {
         {" "}
         <HeroBg />
       </div>
-
-      <div className="inline-block max-w-4xl text-center justify-center space-y-12 z-20 absolute lg:top-20 top-10 lg:pt-30 pt-20 ">
-        <h1 className={title({ size: "xl" })}>Innovative &nbsp;</h1>
-        <h1 className={title({ color: "violet", size: "xl" })}>Web&nbsp;</h1>
+      {/* <FallInPlace className="w-full h-full flex justify-center" delay={0.2}> */}
+      <div className="inline-block max-w-4xl text-center justify-center space-y-8 z-20 absolute lg:top-20 top-10 lg:pt-30 pt-20">
+        <h1 className={title({ color: "violet", size: "lg" })}>Biild&nbsp;</h1>
         <br />
-        <h1 className={title({ size: "xl" })}>Design & Development Firm.</h1>
+        <h1 className={title({ size: "lg" })}>An &nbsp;</h1>
+        <h1 className={title({ size: "lg" })}>Innovative &nbsp;</h1>
+        <br />
+        <h1 className={title({ color: "violet", size: "lg" })}>Web&nbsp;</h1>
+        <br />
+        <h1 className={title({ size: "lg" })}>Design & Development Firm.</h1>
         <h2 className={subtitle({ size: "sm" })}>
           Focused on Responsive, Fast and Modern UI.
         </h2>
         <div className="flex justify-center">
           <Link
-            isExternal
-            as={NextLink}
-            href={siteConfig.links.docs}
+            href={"#contact"}
             className={buttonStyles({
               color: "primary",
               radius: "lg",
@@ -46,6 +49,7 @@ export default function Hero() {
           <small>Designs that are gauranteed to inspire 🚀</small>
         </div>
       </div>
+      {/* </FallInPlace> */}
     </section>
   );
 }

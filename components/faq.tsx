@@ -42,9 +42,9 @@ const faqs = [
 
 const Faq = () => {
   return (
-    <section id="faq" className="w-full h-full  pt-20 pb-20 p-4 ">
+    <section id="faq" className="w-full h-full pt-20 pb-20 p-4 ">
       <div className="w-full h-full container mx-auto flex flex-col items-center">
-        <h1 className="lg:text-6xl text-4xl pb-20">FAQs</h1>
+        <h1 className="lg:text-6xl text-4xl pt-10 pb-10">FAQs</h1>
         <Accordion variant="light">
           <AccordionItem key="1" aria-label="Accordion 1" title={faqs[0].title}>
             {faqs[0].description}

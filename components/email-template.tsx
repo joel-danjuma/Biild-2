@@ -1,5 +1,4 @@
 import * as React from "react";
-// import {Html, } from "@react-email/components"
 
 interface EmailTemplateProps {
   message: string;

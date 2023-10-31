@@ -29,6 +29,10 @@ export const siteConfig = {
       label: "FAQs",
       href: "#faq",
     },
+    // {
+    //   label: "Contact",
+    //   href: "#contact",
+    // },
   ],
   navMenuItems: [
     {
@@ -48,6 +52,10 @@ export const siteConfig = {
       label: "FAQs",
       href: "#faq",
     },
+    // {
+    //   label: "Contact",
+    //   href: "#contact",
+    // },
   ],
   links: {
     github: "https://github.com/nextui-org/nextui",

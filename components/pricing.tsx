@@ -25,7 +25,7 @@ const Pricing = () => {
   return (
     <section id="pricing" className="bg-gray-200 pt-20 pb-20">
       <div className="relative flex flex-col justify-center items-center w-full px-8  mx-auto md:px-12 lg:px-16 max-w-7xl">
-        <h1 className="lg:text-6xl text-4xl pb-20">Pricing</h1>
+        <h1 className="lg:text-6xl text-4xl pt-10 pb-10">Pricing</h1>
         <div className="space-y-12 overflow-hidden bg-white border lg:rounded-3xl lg:p-20 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
           <div className="relative flex flex-col p-4">
             <div className="flex-1">
