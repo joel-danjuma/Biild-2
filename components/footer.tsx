@@ -11,7 +11,7 @@ const Footer = () => {
           title="nextui.org homepage"
         >
           <span className="text-default-600">Powered by</span>
-          <p className="text-primary">Biild.co</p>
+          <p className="text-primary">Biild</p>
         </Link>
       </footer>
     </section>

@@ -17,3 +17,9 @@ export type DividerProps = {
     size: number;
   }[];
 };
+
+export interface EmailTemplateProps {
+  message: string;
+  email?: string;
+  name: string;
+}
