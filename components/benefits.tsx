@@ -1,5 +1,4 @@
 import { Clock } from "./icons";
-import { Radial } from "./icons";
 import { Diamond } from "./icons";
 import { Checkmark } from "./icons";
 import Features from "@/components/features";
