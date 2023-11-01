@@ -1,5 +1,3 @@
-// import React from "react";
-import { Divider } from "@nextui-org/react";
 import { sendEmail } from "@/utils/sendEmail";
 
 const ContactForm = () => {
@@ -68,7 +66,7 @@ const ContactForm = () => {
               </div>
               <div className="p-2 w-full">
                 <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                  Get Started
+                  Lets Talk
                 </button>
               </div>
               {/* <Divider /> */}

@@ -1,7 +1,7 @@
 import { EmailTemplate } from "@/components/email-template";
 import { Resend } from "resend";
 
-const resend = new Resend("re_3BxLwjp7_9pUHZwhKTvKfEQU81k4wCqXj");
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
   const name = (formData.get("name") as string) || "";

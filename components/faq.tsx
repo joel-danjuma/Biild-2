@@ -48,7 +48,6 @@ const Faq = () => {
         <Accordion variant="light">
           <AccordionItem key="1" aria-label="Accordion 1" title={faqs[0].title}>
             {faqs[0].description}
-            {/* {description} */}
           </AccordionItem>
           <AccordionItem key="2" aria-label="Accordion 2" title={faqs[1].title}>
             {faqs[1].description}
