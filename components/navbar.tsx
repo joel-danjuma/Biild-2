@@ -16,6 +16,8 @@ import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { TwitterIcon } from "@/components/icons";
 
+//
+
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -24,7 +26,7 @@ export const Navbar = () => {
       <NextUINavbar
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
-        className=" max-w-xl h-30 rounded-full lg:fixed sticky top-5 left-0 right-0 ml-auto mr-auto "
+        className=" lg:max-w-xl max-w-full lg:p-0 p-4 h-30 lg:rounded-full rounded-none fixed lg:top-5 top-0 left-0 right-0 ml-auto mr-auto "
       >
         {/* DESKTOP NAV */}
         <NavbarContent justify="start">
@@ -32,6 +34,9 @@ export const Navbar = () => {
             <NextLink
               className="flex justify-start items-center gap-1"
               href="/"
+              onClick={() => {
+                setIsMenuOpen(!isMenuOpen);
+              }}
             >
               <p className="font-bold text-inherit">Biild</p>
             </NextLink>
@@ -74,7 +79,7 @@ export const Navbar = () => {
         </NavbarContent>
 
         <NavbarMenu>
-          <div className="mx-4 mt-4 flex flex-col gap-2">
+          <div className="mx-4 mt-12 flex flex-col gap-4 text-3xl">
             {siteConfig.navMenuItems.map((item, index) => (
               <NavbarMenuItem key={`${item}-${index}`}>
                 <Link
