@@ -1,3 +1,4 @@
+"use server";
 import { EmailTemplateProps } from "@/types";
 
 export const sendEmail = async (formData: FormData) => {
@@ -11,7 +12,7 @@ export const sendEmail = async (formData: FormData) => {
     message,
   };
 
-  await fetch("/api/send", {
+  await fetch(`${process.env.URL}/api/send`, {
     method: "POST",
     body: JSON.stringify(email),
     headers: {

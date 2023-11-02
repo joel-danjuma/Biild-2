@@ -1,13 +1,21 @@
-import { sendEmail } from "@/utils/sendEmail";
+"use client";
+import { useRef } from "react";
+import FormButton from "./formButton";
+import { sendEmail } from "@/actions/sendEmail";
 
 const ContactForm = () => {
+  // Ref here is used to clear the inputs of the form
+  const ref = useRef<HTMLFormElement>(null);
   return (
     <section
       id="contact"
       className="bg-black text-white w-full h-full pt-20 pb-20"
     >
       <form
+        ref={ref}
         action={async (formData) => {
+          // ref reset runs client side before SendEmail is invoked on the backend
+          ref.current?.reset();
           await sendEmail(formData);
         }}
       >
@@ -64,12 +72,8 @@ const ContactForm = () => {
                   ></textarea>
                 </div>
               </div>
-              <div className="p-2 w-full">
-                <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                  Lets Talk
-                </button>
-              </div>
-              {/* <Divider /> */}
+              <div className="p-2 w-full">{/*  */}</div>
+              <FormButton />
             </div>
           </div>
         </div>
