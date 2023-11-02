@@ -1,4 +1,4 @@
-import { FeaturesProps } from "@/types";
+import { FeaturesProps } from "@/types/typings";
 
 const Features = ({ title, description, children }: FeaturesProps) => {
   return (

@@ -2,13 +2,9 @@ import { Clock } from "./icons";
 import { Diamond } from "./icons";
 import { Checkmark } from "./icons";
 import Features from "@/components/features";
+import { FeatureType } from "@/types/typings";
 import Testimonials from "@/components/testimonials";
 import SectionTitle from "@/components/section-title";
-
-type FeatureType = {
-  title: string;
-  description: string;
-};
 
 const features: FeatureType[] = [
   {

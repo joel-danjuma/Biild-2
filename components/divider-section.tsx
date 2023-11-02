@@ -1,4 +1,4 @@
-import { DividerProps } from "@/types";
+import { DividerProps } from "@/types/typings";
 
 const Divider = ({ props }: DividerProps) => {
   return (

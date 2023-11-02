@@ -1,4 +1,4 @@
-import { EmailTemplateProps } from "@/types";
+import { EmailTemplateProps } from "@/types/typings";
 
 export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
   message,

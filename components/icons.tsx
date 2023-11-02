@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { IconSvgProps } from "@/types";
+import { IconSvgProps } from "@/types/typings";
 import { motion } from "framer-motion";
 
 export const Logo: React.FC<IconSvgProps> = ({

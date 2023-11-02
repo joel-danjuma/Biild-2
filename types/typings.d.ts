@@ -19,7 +19,19 @@ export type DividerProps = {
 };
 
 export interface EmailTemplateProps {
-  message: string;
-  email?: string;
   name: string;
+  email?: string;
+  message: string;
 }
+
+export interface Tier {
+  price: string;
+  title: string;
+  subtitle: string;
+  benefits: string[];
+}
+
+export type FeatureType = {
+  title: string;
+  description: string;
+};

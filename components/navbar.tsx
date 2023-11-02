@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -7,6 +9,7 @@ import {
   NavbarItem,
   NavbarMenuItem,
 } from "@nextui-org/navbar";
+import React from "react";
 import NextLink from "next/link";
 import { Link } from "@nextui-org/link";
 import { siteConfig } from "@/config/site";
@@ -14,9 +17,15 @@ import { ThemeSwitch } from "@/components/theme-switch";
 import { TwitterIcon } from "@/components/icons";
 
 export const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
   return (
     <section className="w-full h-full flex justify-center relative">
-      <NextUINavbar className=" max-w-xl h-30 rounded-full lg:fixed sticky top-5 left-0 right-0 ml-auto mr-auto ">
+      <NextUINavbar
+        isMenuOpen={isMenuOpen}
+        onMenuOpenChange={setIsMenuOpen}
+        className=" max-w-xl h-30 rounded-full lg:fixed sticky top-5 left-0 right-0 ml-auto mr-auto "
+      >
         {/* DESKTOP NAV */}
         <NavbarContent justify="start">
           <NavbarBrand as="li" className="gap-3 max-w-fit">
@@ -50,16 +59,6 @@ export const Navbar = () => {
             >
               <TwitterIcon className="text-default-500" />
             </Link>
-            {/* <Link
-              isExternal
-              href={siteConfig.links.discord}
-              aria-label="Discord"
-            >
-              <DiscordIcon className="text-default-500" />
-            </Link> */}
-            {/* <Link isExternal href={siteConfig.links.github} aria-label="Github">
-              <GithubIcon className="text-default-500" />
-            </Link> */}
             <ThemeSwitch />
           </NavbarItem>
         </NavbarContent>
@@ -79,6 +78,9 @@ export const Navbar = () => {
             {siteConfig.navMenuItems.map((item, index) => (
               <NavbarMenuItem key={`${item}-${index}`}>
                 <Link
+                  onClick={() => {
+                    setIsMenuOpen(!isMenuOpen);
+                  }}
                   color={
                     index === 2
                       ? "primary"

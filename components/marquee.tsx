@@ -82,21 +82,21 @@ const stackLogos = [
 
 const MarqueeComponent = () => {
   return (
-    <section className="flex items-center gap-10 w-screen h-28 pt-4 pb-4 bg-black relative justify-center ">
-      <div className="w-[100vw] flex items-center overflow-x-hidden absolute">
-        <Marquee>
-          {stackLogos.map((item, i: any) => (
-            <Image
-              key={i}
-              src={item.image}
-              alt={item.name}
-              // width={item.size}
-              // height={item.size}
-              className={`lg:w-28 lg:h-28 lg:px-7 px-4 w-20 h-20`}
-            ></Image>
-          ))}
-        </Marquee>
-      </div>
+    <section className="flex items-center gap-10 w-screen h-28 pt-4 pb-4 bg-black relative justify-center z-20">
+      {/* <div className="w-[100vw] flex items-center overflow-x-hidden absolute"> */}
+      <Marquee>
+        {stackLogos.map((item, i: any) => (
+          <Image
+            key={i}
+            src={item.image}
+            alt={item.name}
+            // width={item.size}
+            // height={item.size}
+            className={`lg:w-28 lg:h-28 lg:px-7 px-4 w-20 h-20`}
+          ></Image>
+        ))}
+      </Marquee>
+      {/* </div> */}
     </section>
   );
 };
