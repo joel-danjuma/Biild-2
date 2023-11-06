@@ -1,44 +1,6 @@
 "use client";
+import { faqs } from "@/config/constants";
 import { Accordion, AccordionItem } from "@nextui-org/react";
-
-const faqs = [
-  {
-    title: "Who are the developers ?",
-    description:
-      "We are a team of experienced developers with over 2 years of experience developing mobile and web applications. We are a small team and as such, you will work directly with a dedicated rep. Also, all design requests such as animations or illustrations are managed by our in house designers.",
-  },
-  {
-    title: "What kind of applications can you develop?",
-    description:
-      "Our Developers are conversant with various technologies, and can develop most kinds of applications. We are specialized in developig web applications, mobile applications, API's and Web3 applications. ",
-  },
-  {
-    title: "What Technology stack do you develop with?",
-    description:
-      "  Our Primary focus is developing for the web and mobile, as such, we work With NextJs, Flutter and Javascript on The front end. We also develop Web3 Applicatiions using Alchemy SDK to connect and deploy to any EVM blockchain.",
-  },
-  {
-    title: "How fast will I receive my project?",
-    description:
-      "On average, most development requests are completed in 2 weeks or less. However, more complex requests can take longer.",
-  },
-  {
-    title: "What if I don't like the design?",
-    description:
-      "We Provide up to two free revisions on design Projects, However, We Do not offer revisions for Mobile and Web Development projects, as all design revisions will be completed before the start of the development.",
-  },
-
-  {
-    title: "Are there any refunds if I don't like the service?",
-    description:
-      "Due to the high quality nature of the work, there will be no refunds issued.",
-  },
-  {
-    title: "Are there any refunds if I don't like the service?",
-    description:
-      "Due to the high quality nature of the work, there will be no refunds issued.",
-  },
-];
 
 const Faq = () => {
   return (

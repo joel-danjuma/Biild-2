@@ -2,36 +2,18 @@ import { Clock } from "./icons";
 import { Diamond } from "./icons";
 import { Checkmark } from "./icons";
 import Features from "@/components/features";
-import { FeatureType } from "@/types/typings";
+import { features } from "@/config/constants";
 import Testimonials from "@/components/testimonials";
 import SectionTitle from "@/components/section-title";
-
-const features: FeatureType[] = [
-  {
-    title: "Quick delivery",
-    description:
-      "Receive your design and development projects within a few business days on average, Monday to Monday.",
-  },
-  {
-    title: "Unique and all yours",
-    description:
-      "Each project is unique and we strive to produce original code and designs made especially for you.",
-  },
-  {
-    title: "Top-notch quality",
-    description:
-      "We put in our utmost into each project, and it definately shows, we aim for the best quality",
-  },
-];
 
 const Benefits = () => {
   return (
     <section id="benefits" className="w-full h-full p-3 bg-gray-200 )">
-      <SectionTitle title="We don't try to reinvent the wheel We Just develop Imaginatively">
+      <SectionTitle title="We develop great websites that will you grow your business">
         Design as you know it is out the door. Design as you want it just
         arrived.
       </SectionTitle>
-      <div className="grid lg:grid-flow-row lg:grid-cols-3 lg:grid-rows-1 grid-flow-col grid-cols-1 grid-rows-3 justify-center">
+      <div className="grid lg:grid-flow-row lg:grid-cols-3 lg:grid-rows-1 grid-flow-col grid-cols-1 grid-rows-3 text-center -mt-10">
         <Features
           title={features[0].title}
           description={features[0].description}

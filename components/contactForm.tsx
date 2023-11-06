@@ -72,8 +72,9 @@ const ContactForm = () => {
                   ></textarea>
                 </div>
               </div>
-              <div className="p-2 w-full">{/*  */}</div>
-              <FormButton />
+              <div className="p-2 w-full flex flex-col items-center">
+                <FormButton />
+              </div>
             </div>
           </div>
         </div>

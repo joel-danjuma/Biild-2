@@ -16,13 +16,7 @@ const Home = () => {
       <Hero />
       <MarqueeComponent />
       <Benefits />
-      <Divider
-        props={[
-          { image: HeroDoodle, size: 100 },
-          // { image: Doodle, size: 100 },
-          // { image: Doodle, size: 100 },
-        ]}
-      />
+      <Divider props={[{ image: HeroDoodle, size: 100 }]} />
       <Services />
       <Divider
         props={[

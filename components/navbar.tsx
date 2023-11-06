@@ -34,9 +34,6 @@ export const Navbar = () => {
             <NextLink
               className="flex justify-start items-center gap-1"
               href="/"
-              onClick={() => {
-                setIsMenuOpen(!isMenuOpen);
-              }}
             >
               <p className="font-bold text-inherit">Biild</p>
             </NextLink>
