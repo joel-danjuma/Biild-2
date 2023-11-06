@@ -8,7 +8,7 @@ import SectionTitle from "@/components/section-title";
 
 const Benefits = () => {
   return (
-    <section id="benefits" className="w-full h-full p-3 bg-gray-200 )">
+    <section id="benefits" className="w-full h-full bg-gray-200 p-4">
       <SectionTitle title="We develop great websites that will you grow your business">
         Design as you know it is out the door. Design as you want it just
         arrived.

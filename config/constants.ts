@@ -53,7 +53,7 @@ export const features: FeatureType[] = [
   {
     title: "Quick delivery",
     description:
-      "We have a quick delivery for all web design and devlopment projects. Receive your projects within a month on average, 3 weeks.",
+      "We have a quick delivery for all web design and devlopment projects.",
   },
   {
     title: "Unique and all yours",

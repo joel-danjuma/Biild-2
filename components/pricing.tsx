@@ -1,12 +1,16 @@
 import { Tick } from "./icons";
 import { Tier } from "@/types/typings";
 import { tiers } from "@/config/constants";
+import SectionTitle from "./section-title";
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="bg-gray-200 pt-20 pb-20">
+    <section id="pricing" className="bg-gray-200 p-4 pb-20">
+      <SectionTitle title="Pricing">
+        These are our offers and different tiers of service
+      </SectionTitle>
       <div className="relative flex flex-col justify-center items-center w-full px-8  mx-auto md:px-12 lg:px-16 max-w-7xl">
-        <h1 className="lg:text-6xl text-4xl pt-10 pb-10">Pricing</h1>
+        {/* <h1 className="lg:text-6xl text-4xl pt-10 pb-10">Pricing</h1> */}
         <div className="space-y-12 overflow-hidden bg-white border lg:rounded-3xl lg:p-20 lg:space-y-0 w-full">
           <div className="relative flex lg:flex-row flex-col  w-full p-4 ">
             {tiers.map((tier: Tier, i: number) => {

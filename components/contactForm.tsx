@@ -14,7 +14,7 @@ const ContactForm = () => {
       <form
         ref={ref}
         action={async (formData) => {
-          // ref reset runs client side before SendEmail is invoked on the backend
+          // ref reset is used to clear the form and runs on the client side before SendEmail is invoked on the backend
           ref.current?.reset();
           await sendEmail(formData);
         }}

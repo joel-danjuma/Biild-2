@@ -1,12 +1,16 @@
 "use client";
 import { faqs } from "@/config/constants";
+import SectionTitle from "./section-title";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 
 const Faq = () => {
   return (
-    <section id="faq" className="w-full h-full pt-20 pb-20 p-4 ">
+    <section id="faq" className="w-full h-full p-4 pb-20 ">
+      <SectionTitle title="FAQs">
+        The most common questions answered.
+      </SectionTitle>
       <div className="w-full h-full container mx-auto flex flex-col items-center">
-        <h1 className="lg:text-6xl text-4xl pt-10 pb-10">FAQs</h1>
+        {/* <h1 className="lg:text-6xl text-4xl pt-10 pb-10">FAQs</h1> */}
         <Accordion variant="light">
           <AccordionItem key="1" aria-label="Accordion 1" title={faqs[0].title}>
             {faqs[0].description}
