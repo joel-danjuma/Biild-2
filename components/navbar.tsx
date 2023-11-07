@@ -26,7 +26,7 @@ export const Navbar = () => {
       <NextUINavbar
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
-        className=" lg:max-w-xl max-w-full lg:p-0 p-4 h-30 lg:rounded-full rounded-none fixed lg:top-5 top-0 left-0 right-0 ml-auto mr-auto "
+        className=" lg:max-w-xl max-w-full lg:p-0 p-4 lg:h-30 h-20 lg:rounded-full rounded-none fixed lg:top-5 top-0 left-0 right-0 ml-auto mr-auto "
       >
         {/* DESKTOP NAV */}
         <NavbarContent justify="start">
