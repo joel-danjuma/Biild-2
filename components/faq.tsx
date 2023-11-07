@@ -10,7 +10,6 @@ const Faq = () => {
         The most common questions answered.
       </SectionTitle>
       <div className="w-full h-full container mx-auto flex flex-col items-center">
-        {/* <h1 className="lg:text-6xl text-4xl pt-10 pb-10">FAQs</h1> */}
         <Accordion variant="light">
           <AccordionItem key="1" aria-label="Accordion 1" title={faqs[0].title}>
             {faqs[0].description}

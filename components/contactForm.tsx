@@ -7,10 +7,7 @@ const ContactForm = () => {
   // Ref here is used to clear the inputs of the form
   const ref = useRef<HTMLFormElement>(null);
   return (
-    <section
-      id="contact"
-      className="bg-black text-white w-full h-full pt-20 pb-20"
-    >
+    <section id="contact" className="bg-black text-white w-full h-full pt-20">
       <form
         ref={ref}
         action={async (formData) => {
@@ -77,20 +74,15 @@ const ContactForm = () => {
               </div>
             </div>
           </div>
-          <div className="p-2 w-full pt-8 mt-8 space-y-5 border-t flex flex-col justify-center border-gray-200 text-center">
-            <a className="text-indigo-500 w-full">BiildCo@Gmail.com</a>
-            {/* <p className="leading-normal my-5">
-              300 Woji Road GRA Phase 2.
-              <br />
-              Port Harcourt, Rivers Nigeria.
-            </p> */}
+          <div className="p-2 w-full pt-8 mt-8 space-y-5 border-t flex flex-col items-center border-gray-200 text-center">
+            <a className="text-indigo-500 w-full">Biild@Gmail.com</a>
             <div className="flex flex-row justify-center w-full">
-              <a href="#" className="ml-4 text-gray-500">
+              <a href="#" className="text-gray-500">
                 <svg
                   fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
@@ -101,9 +93,9 @@ const ContactForm = () => {
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
@@ -114,9 +106,9 @@ const ContactForm = () => {
               <a href="#" className="ml-4 text-gray-500">
                 <svg
                   fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >

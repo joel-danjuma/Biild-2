@@ -13,16 +13,20 @@ export const metadata: Metadata = {
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  // themeColor: [
-  //   { media: "(prefers-color-scheme: light)", color: "white" },
-  //   { media: "(prefers-color-scheme: dark)", color: "black" },
-  // ],
+
   icons: {
     icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon.ico",
   },
 };
+
+// export const generateMetadata = async () => {
+//   return {
+//     title: "Expert Web Development Services | Biild",
+//     description:
+//       "Biild offers UI/UX design, API development, WEB3 apps, e-commerce, and more. Boost your online presence with our top-notch web development services.",
+//   };
+// };
 
 export default function RootLayout({
   children,
@@ -48,5 +52,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-// className="container mx-auto max-w-7xl pt-16 px-6 flex-grow"

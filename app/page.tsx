@@ -8,15 +8,7 @@ import Benefits from "@/components/benefits";
 import Services from "@/components/services";
 import Divider from "@/components/divider-section";
 import MarqueeComponent from "@/components/marquee";
-import { HeroDoodle } from "@/components/icons";
-
-// export const generateMetadata = async () => {
-//   return {
-//     title: "Expert Web Development Services | Biild",
-//     description:
-//       "Biild offers UI/UX design, API development, WEB3 apps, e-commerce, and more. Boost your online presence with our top-notch web development services.",
-//   };
-// };
+import { Doodle2, HeroDoodle, Person } from "@/components/icons";
 
 const Home = () => {
   return (
@@ -26,13 +18,7 @@ const Home = () => {
       <Benefits />
       <Divider props={[{ image: HeroDoodle, size: 100 }]} />
       <Services />
-      {/* <Divider
-        props={[
-          { image: Doodle, size: 100 },
-          { image: Doodle, size: 100 },
-          { image: Doodle, size: 100 },
-        ]}
-      /> */}
+      <Divider props={[{ image: Doodle2, size: 100 }]} />
       <Pricing />
       {/* <Divider
         props={[

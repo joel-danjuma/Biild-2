@@ -10,18 +10,17 @@ const Pricing = () => {
         These are our offers and different tiers of service
       </SectionTitle>
       <div className="relative flex flex-col justify-center items-center w-full px-8  mx-auto md:px-12 lg:px-14 max-w-7xl">
-        {/* <h1 className="lg:text-6xl text-4xl pt-10 pb-10">Pricing</h1> */}
         <div className="space-y-12 overflow-hidden bg-white border lg:rounded-3xl lg:p-20 lg:space-y-0 w-full">
           <div className="relative flex lg:flex-row flex-col  w-full p-4 ">
             {tiers.map((tier: Tier, i: number) => {
               return (
                 <div key={i} className="w-full rounded-none py-4 lg:px-4">
                   <p className="flex items-baseline mt-4 text-black">
-                    <span className="text-5xl font-bold tracking-tight text-black">
+                    <span className="lg:text-3xl text-2xl font-bold tracking-tight text-black">
                       {tier.price}
                     </span>
                   </p>
-                  <div className="px-4 py-5 border-b">
+                  <div className="lg:px-4 lg:py-5 px-2 border-b">
                     <div className="flex flex-wrap items-baseline -mt-2 -ml-2">
                       <h3 className="mt-2 text-lg text-black">{tier.title}</h3>
                       <p className="mt-1 text-sm text-gray-500">
