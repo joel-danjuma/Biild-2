@@ -13,7 +13,7 @@ import { Doodle2, HeroDoodle, Person } from "@/components/icons";
 
 const Home = () => {
   return (
-    <section className="scroll-smooth">
+    <section>
       <Hero />
       <MarqueeComponent />
       <Benefits />
