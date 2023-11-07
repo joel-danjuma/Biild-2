@@ -9,7 +9,7 @@ const Pricing = () => {
       <SectionTitle title="Pricing">
         These are our offers and different tiers of service
       </SectionTitle>
-      <div className="relative flex flex-col justify-center items-center w-full px-8  mx-auto md:px-12 lg:px-16 max-w-7xl">
+      <div className="relative flex flex-col justify-center items-center w-full px-8  mx-auto md:px-12 lg:px-14 max-w-7xl">
         {/* <h1 className="lg:text-6xl text-4xl pt-10 pb-10">Pricing</h1> */}
         <div className="space-y-12 overflow-hidden bg-white border lg:rounded-3xl lg:p-20 lg:space-y-0 w-full">
           <div className="relative flex lg:flex-row flex-col  w-full p-4 ">
@@ -46,7 +46,7 @@ const Pricing = () => {
                         className="flex flex-col order-last mt-10 text-sm text-black gap-y-3"
                       >
                         <li className="flex items-center">
-                          <Tick />
+                          <Tick size={24} />
 
                           <span className="ml-4"> {benefit} </span>
                         </li>

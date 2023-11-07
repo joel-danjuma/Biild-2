@@ -12,7 +12,7 @@ import javascript from "@/public/javascript.svg";
 
 export const tiers = [
   {
-    price: "$250",
+    price: "Contact Us",
     title: "Web And Mobile App development",
     subtitle: "SAAS, Ecommerce, Company Website, Personal Brand, Landing Page",
     benefits: [
@@ -63,7 +63,7 @@ export const features: FeatureType[] = [
   {
     title: "Speed and Search Engine Optimized",
     description:
-      "Our websites are developed with speed in mind and we use the latest SEO and speed optimization techniques to rank higher in search and operate more efficiently.",
+      "We develop using the latest SEO and speed optimization techniques to rank higher in search and operate more efficiently.",
   },
 ];
 
