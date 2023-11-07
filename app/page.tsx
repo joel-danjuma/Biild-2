@@ -2,6 +2,7 @@
 import Cta from "@/components/cta";
 import Faq from "@/components/faq";
 import Hero from "@/components/hero";
+import Blog from "@/components/blog";
 import Footer from "@/components/footer";
 import Pricing from "@/components/pricing";
 import Benefits from "@/components/benefits";
@@ -28,6 +29,7 @@ const Home = () => {
         ]}
       /> */}
       <Faq />
+      <Blog />
       <Cta />
       <Footer />
     </section>
