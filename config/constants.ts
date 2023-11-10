@@ -42,8 +42,8 @@ export const tiers = [
     subtitle: "SAAS, Ecommerce, Company Website, Personal Brand, Landing Page",
     benefits: [
       "Free Onboarding Call with a Developer to better understand your project needs",
-      "Basic Technical Support to assist with any issues or questions relating to projects.",
-      "Community Forum Access: Access to a community forum where users can seek help and share knowledge.",
+      "Basic Technical Support to assist with any issues or questions relating to ongoing projects.",
+      "Blog Access: Access to our free blog where users can learn alot about software development.",
       "Monthly Newsletter: Regular updates, tips, and news delivered to the users inbox.",
     ],
   },
