@@ -21,13 +21,6 @@ const Home = () => {
       <Services />
       <Divider props={[{ image: Doodle2, size: 100 }]} />
       <Pricing />
-      {/* <Divider
-        props={[
-          { image: Doodle, size: 100 },
-          { image: Doodle, size: 100 },
-          { image: Doodle, size: 100 },
-        ]}
-      /> */}
       <Faq />
       <Blog />
       <Cta />
