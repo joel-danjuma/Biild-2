@@ -63,7 +63,7 @@ export const features: FeatureType[] = [
   {
     title: "Speed and Search Engine Optimized",
     description:
-      "We develop using the latest SEO and speed optimization techniques to rank higher in search and operate more efficiently.",
+      "We develop using the latest SEO and speed optimization techniques.",
   },
 ];
 

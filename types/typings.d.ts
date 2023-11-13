@@ -35,3 +35,9 @@ export type FeatureType = {
   title: string;
   description: string;
 };
+
+export type AnimatedTextProps = {
+  text: string;
+  el?: keyof JSX.IntrinsicElements;
+  className: string;
+};

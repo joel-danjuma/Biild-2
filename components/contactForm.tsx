@@ -18,7 +18,7 @@ const ContactForm = () => {
       >
         <div className="container px-5 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="lg:text-6xl text-4xl pt-10 pb-10">Contact Us</h1>
+            <h2 className="lg:text-6xl text-4xl pt-10 pb-10">Contact Us</h2>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
               We Look Forward to working with you on your next Big Project.{" "}
               <br />
