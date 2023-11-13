@@ -13,7 +13,7 @@ export const FallInPlace = (props: CustomMotionProps) => {
       transition={{
         type: "tween",
         ease: "easeOut",
-        duration: 2,
+        duration: 0.5,
         delay,
       }}
       {...rest}

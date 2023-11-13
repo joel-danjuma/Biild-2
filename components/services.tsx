@@ -37,13 +37,15 @@ const Services = () => {
         <div className="lg:container lg:mx-auto min-h-screen w-full lg:border-4 border-4 border-black dark:border-white lg:p-12 p-4 lg:grid lg:grid-cols-3 lg:grid-rows-7 grid-cols-1 lg:gap-20 gap-8">
           {services.map((service: string, i: number) => {
             return (
-              <ul
+              <div
                 key={i}
-                className="flex flex-col justify-center text-justify text-xl"
+                className="flex flex-col justify-center text-justify text-xl gap-2"
               >
-                <li>{service}</li>
+                <ul>
+                  <li>{service}</li>
+                </ul>
                 <Divider />
-              </ul>
+              </div>
             );
           })}
         </div>

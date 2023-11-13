@@ -33,7 +33,8 @@ export const Navbar = () => {
           <NavbarBrand as="li" className="gap-3 max-w-fit">
             <NextLink
               className="flex justify-start items-center gap-1"
-              href="/"
+              href={`${process.env.URL}`}
+              aria-label={`Navigate to top of the screen`}
             >
               <p className="font-bold text-inherit">Biild</p>
             </NextLink>
@@ -43,7 +44,12 @@ export const Navbar = () => {
           <ul className="hidden lg:flex justify-center gap-4 ml-2">
             {siteConfig.navItems.map((item) => (
               <NavbarItem key={item.href} isActive>
-                <NextLink href={item.href}>{item.label}</NextLink>
+                <NextLink
+                  href={process.env.URL + item.href}
+                  aria-label={`Navigate to ${item} section`}
+                >
+                  {item.label}
+                </NextLink>
               </NavbarItem>
             ))}
           </ul>
@@ -68,7 +74,7 @@ export const Navbar = () => {
         {/* MOBILE MENU */}
 
         <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-          <Link isExternal href={siteConfig.links.github} aria-label="Github">
+          <Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
             <TwitterIcon className="text-default-500" />
           </Link>
           <ThemeSwitch />
@@ -90,7 +96,8 @@ export const Navbar = () => {
                       ? "danger"
                       : "foreground"
                   }
-                  href={item.href}
+                  href={process.env.URL + item.href}
+                  aria-label={`Navigate to ${item} section`}
                   size="lg"
                 >
                   {item.label}

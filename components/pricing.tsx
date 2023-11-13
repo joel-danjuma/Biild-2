@@ -30,26 +30,29 @@ const Pricing = () => {
                   </div>
                   <div className="flex p-4">
                     <a
-                      href="#contact"
+                      href={process.env.URL + "/#contact"}
                       className="items-center justify-center w-full px-6 py-2.5 mt-8 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black"
-                      aria-describedby="tier-hobby"
+                      aria-label={`Navigate to contact section`}
                     >
                       Get Started
                     </a>
                   </div>
                   {tier.benefits.map((benefit: string, i: number) => {
                     return (
-                      <ul
+                      <div
                         key={i}
                         role="list"
-                        className="flex flex-col order-last mt-10 text-sm text-black gap-y-3"
+                        className="flex flex-col mt-10 text-sm text-black"
                       >
-                        <li className="flex items-center">
+                        <div className="flex flex-row gap-2">
                           <Tick size={24} />
-
-                          <span className="ml-4"> {benefit} </span>
-                        </li>
-                      </ul>
+                          <ul>
+                            <li className="flex items-center">
+                              <span className="ml-4"> {benefit} </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     );
                   })}
                 </div>

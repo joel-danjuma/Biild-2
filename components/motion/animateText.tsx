@@ -1,5 +1,7 @@
+"use client";
 import { AnimatedTextProps } from "@/types/typings";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 const defaultAnimations = {
   hidden: {
@@ -15,11 +17,16 @@ const AnimateText = ({
   el: Wrapper = "p",
   className,
 }: AnimatedTextProps) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.5, once: true });
+
   return (
     <Wrapper className={className}>
       <span className="sr-only">{text}</span>
       <motion.span
+        ref={ref}
         initial="hidden"
+        // animate={isInView ? "visible " : "hidden"}
         animate="visible"
         transition={{ staggerChildren: 0.1 }}
         aria-hidden

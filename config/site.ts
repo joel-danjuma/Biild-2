@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Expert Web Development Services | Biild",
+  name: "Expert Web Design and Software Development Services | Biild",
   description:
     "Biild offers UI/UX design, API development, WEB3 apps, e-commerce, and more. Boost your online presence with our top-notch web development services.",
   navItems: [
