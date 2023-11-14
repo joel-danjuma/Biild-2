@@ -13,9 +13,9 @@ const SectionTitle = (props: { title: string; children: ReactNode }) => {
       )}
 
       {props.children && (
-        <p className="max-w-2xl py-4 text-lg leading-normal dark:text-black text-gray-800 lg:text-xl xl:text-xl">
+        <h3 className="max-w-2xl py-4 text-lg leading-normal dark:text-black text-gray-800 lg:text-xl xl:text-xl">
           {props.children}
-        </p>
+        </h3>
       )}
     </div>
   );

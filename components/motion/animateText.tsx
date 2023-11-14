@@ -10,6 +10,9 @@ const defaultAnimations = {
   visible: {
     opacity: 1,
   },
+  transition: {
+    duration: 1,
+  },
 };
 
 const AnimateText = ({

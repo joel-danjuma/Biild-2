@@ -30,23 +30,28 @@ export const Navbar = () => {
       >
         {/* DESKTOP NAV */}
         <NavbarContent justify="start">
-          <NavbarBrand as="li" className="gap-3 max-w-fit">
-            <NextLink
-              className="flex justify-start items-center gap-1"
-              href={`${process.env.URL}`}
-              aria-label={`Navigate to top of the screen`}
-            >
-              <p className="font-bold text-inherit">Biild</p>
-            </NextLink>
-          </NavbarBrand>
+          <ul className="gap-3 max-w-fit">
+            <NavbarItem>
+              <NextLink
+                className="flex justify-start items-center gap-1"
+                href="/"
+                aria-label={`Biild`}
+              >
+                <p className="font-bold text-inherit">Biild</p>
+              </NextLink>
+            </NavbarItem>
+          </ul>
         </NavbarContent>
         <NavbarContent className="basis-1/5 sm:basis-full" justify="center">
           <ul className="hidden lg:flex justify-center gap-4 ml-2">
             {siteConfig.navItems.map((item) => (
               <NavbarItem key={item.href} isActive>
                 <NextLink
-                  href={process.env.URL + item.href}
+                  href={item.href}
                   aria-label={`Navigate to ${item} section`}
+                  // onClick={() => {
+                  //   console.log(process.env.URL);
+                  // }}
                 >
                   {item.label}
                 </NextLink>
@@ -96,7 +101,7 @@ export const Navbar = () => {
                       ? "danger"
                       : "foreground"
                   }
-                  href={process.env.URL + item.href}
+                  href={item.href}
                   aria-label={`Navigate to ${item} section`}
                   size="lg"
                 >

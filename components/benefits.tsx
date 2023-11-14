@@ -11,12 +11,14 @@ const Benefits = () => {
   return (
     <section id="benefits" className="w-full h-full bg-gray-200 p-4">
       <SectionTitle title="We develop great websites that will you grow your business">
-        <AnimateText
+        {/* <AnimateText
           text=" Design as you know it is out the door. Design as you want it just
         arrived."
           className=""
           el="p"
-        ></AnimateText>
+        ></AnimateText> */}
+        Design as you know it is out the door. Design as you want it just
+        arrived.
       </SectionTitle>
       <div className="grid lg:grid-flow-row lg:grid-cols-3 lg:grid-rows-1 grid-flow-col grid-cols-1 grid-rows-3 text-center -mt-10">
         <Features
