@@ -16,7 +16,7 @@ const Testimonials = () => {
           <div className="justify-center mt-4 space-y-4">
             <p className="text-sm font-medium text-black">
               Sam Samuel, Lead marketing specialist -
-              <span className="font-medium text-blue-500">Company</span>
+              <span className="font-medium text-black">Company</span>
             </p>
           </div>
         </div>

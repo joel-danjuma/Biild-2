@@ -78,7 +78,7 @@ const ContactForm = () => {
             <a
               className="text-indigo-500 w-full"
               href="mailto:Leojjad@gmail.com"
-              aria-label={`Send a message to email`}
+              aria-label={`Biild@Gmail.com | Send us an Email`}
             >
               Biild@Gmail.com
             </a>

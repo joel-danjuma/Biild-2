@@ -41,7 +41,6 @@ const Pricing = () => {
                     return (
                       <div
                         key={i}
-                        role="list"
                         className="flex flex-col mt-10 text-sm text-black"
                       >
                         <div className="flex flex-row gap-2">
