@@ -29,18 +29,16 @@ export const Navbar = () => {
         className=" lg:max-w-xl max-w-full lg:p-0 p-4 lg:h-30 h-20 lg:rounded-full rounded-none fixed lg:top-5 top-0 left-0 right-0 ml-auto mr-auto "
       >
         {/* DESKTOP NAV */}
-        <NavbarContent justify="start">
-          <ul className="gap-3 max-w-fit">
-            <NavbarItem>
-              <NextLink
-                className="flex justify-start items-center gap-1"
-                href="/"
-                aria-label={`Biild`}
-              >
-                <p className="font-bold text-inherit">Biild</p>
-              </NextLink>
-            </NavbarItem>
-          </ul>
+        <NavbarContent justify="start" className="gap-3 max-w-fit">
+          <NavbarItem>
+            <NextLink
+              className="flex justify-start items-center gap-1"
+              href="/"
+              aria-label={`Biild`}
+            >
+              <p className="font-bold text-inherit">Biild</p>
+            </NextLink>
+          </NavbarItem>
         </NavbarContent>
         <NavbarContent className="basis-1/5 sm:basis-full" justify="center">
           <ul className="hidden lg:flex justify-center gap-4 ml-2">
