@@ -12,7 +12,7 @@ const Features = ({ title, description, children }: FeaturesProps) => {
             <p className="mt-4 text-xl font-medium leading-6 text-black">
               {title}
             </p>
-            <p className="mt-3 text-lg text-gray-500">{description}</p>
+            <p className="mt-3 text-lg text-black">{description}</p>
           </div>
         </div>
       </div>

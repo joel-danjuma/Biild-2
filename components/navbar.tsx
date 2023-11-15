@@ -48,7 +48,7 @@ export const Navbar = () => {
               <NavbarItem key={item.href} isActive>
                 <NextLink
                   href={item.href}
-                  aria-label={`Navigate to ${item} section`}
+                  aria-label={`${item.label} section`}
                   // onClick={() => {
                   //   console.log(process.env.URL);
                   // }}
@@ -102,7 +102,7 @@ export const Navbar = () => {
                       : "foreground"
                   }
                   href={item.href}
-                  aria-label={`Navigate to ${item} section`}
+                  aria-label={`${item.label} section`}
                   size="lg"
                 >
                   {item.label}

@@ -32,7 +32,7 @@ const Pricing = () => {
                     <a
                       href={process.env.URL + "/#contact"}
                       className="items-center justify-center w-full px-6 py-2.5 mt-8 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black"
-                      aria-label={`Navigate to contact section`}
+                      aria-label={`Get Started`}
                     >
                       Get Started
                     </a>
