@@ -29,9 +29,6 @@ const Faq = () => {
           <AccordionItem key="6" aria-label="Accordion 6" title={faqs[5].title}>
             {faqs[5].description}
           </AccordionItem>
-          <AccordionItem key="7" aria-label="Accordion 7" title={faqs[6].title}>
-            {faqs[6].description}
-          </AccordionItem>
         </Accordion>
       </div>
     </section>

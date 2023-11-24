@@ -13,10 +13,10 @@ export default function Hero() {
     <section>
       <div className="w-full h-[100vh] flex flex-row items-center justify-center gap-8 relative">
         <div className="lg:flex hidden dark:bg-black bg-white bg-opacity-70 dark:bg-opacity-70 absolute top-0 w-full h-full z-10"></div>
-        {/* <div className="w-full h-full lg:flex hidden justify-center relative ">
+        <div className="w-full h-full lg:flex hidden justify-center relative ">
           <HeroBg />
-          <HeroBg2 />
-        </div> */}
+          {/* <HeroBg2 /> */}
+        </div>
 
         <div className="flex flex-col justify-center lg:p-0 p-4 text-center z-20 absolute top-0 lg:pt-24 pt-20 h-full max-w-[1128px]">
           <h1 className={title({ size: "xl" })}>

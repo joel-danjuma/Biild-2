@@ -21,10 +21,10 @@ export const siteConfig = {
       label: "FAQs",
       href: "#faq",
     },
-    {
-      label: "Blog",
-      href: "#blog",
-    },
+    // {
+    //   label: "Blog",
+    //   href: "#blog",
+    // },
   ],
   navMenuItems: [
     {

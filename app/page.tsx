@@ -17,12 +17,12 @@ const Home = () => {
       <Hero />
       <MarqueeComponent />
       <Benefits />
-      <Divider props={[{ image: HeroDoodle, size: 100 }]} />
+      {/* <Divider props={[{ image: HeroDoodle, size: 100 }]} /> */}
       <Services />
-      <Divider props={[{ image: Doodle2, size: 100 }]} />
+      {/* <Divider props={[{ image: Doodle2, size: 100 }]} /> */}
       <Pricing />
       <Faq />
-      <Blog />
+      {/* <Blog /> */}
       <Cta />
       <Footer />
     </section>
