@@ -78,9 +78,9 @@ const ContactForm = () => {
             <a
               className="text-indigo-500 w-full"
               href="mailto:Leojjad@gmail.com"
-              aria-label={`Call us at : number `}
+              aria-label={`Email at leojjad@gmail.com`}
             >
-              +2349024521063
+              Leojjad@gmail.com
             </a>
           </div>
         </div>
