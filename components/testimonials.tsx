@@ -3,7 +3,7 @@ import React from "react";
 const Testimonials = () => {
   return (
     <section className="w-full h-full lg:px-0 px-2 pt-20 pb-20">
-      <div className="px-8 py-24 mx-auto max-w-7xl lg:px-16 md:px-12 xl:px-36 dark:bg-slate-900 bg-gray-400 ">
+      <div className="px-8 py-24 mx-auto max-w-7xl lg:px-16 md:px-12 xl:px-36 dark:bg-slate-900 bg-gray-400 rounded-lg ">
         <div className="max-w-2xl mx-auto text-center">
           <p className="pb-4 text-base text-black">
             When building projects, going from an idea to a working version is
